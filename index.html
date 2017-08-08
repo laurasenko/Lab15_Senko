@@ -1,0 +1,26 @@
+<!doctype html>
+<html  ng-app="madLibsApp">
+<head>
+    <title>Lab 15</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+<body>
+    <nav>
+        <a href="#!/input">Enter Words Here</a>
+        <a href="#!/display">Read your Story</a>
+    </nav>
+
+    <main>
+    <h1>Mad Libs</h1>
+    <div ng-view=""></div>
+    </main>
+
+   
+    <script src="lib/angular.min.js" charset="utf-8"></script>
+    <script src="lib/angular-route.min.js" charset="utf-8"></script>
+    <script src="app.js"></script>
+    <script src="input-controller.js"></script>
+    <script src="display-controller.js"></script>
+    <script src="madLibsService.js" charset="utf-8"></script>
+</body>
+</html>

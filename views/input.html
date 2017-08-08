@@ -1,0 +1,36 @@
+<form>
+  <fieldset>
+    <legend>Mad Libs Input</legend>
+    <p>
+      <input type="text" name="noun_1" id="noun_1" ng-model="word.noun_1">
+      <label for="noun_1">Enter a noun:</label>
+    </p>
+    <p>
+      <input type="text" name="noun_2" id="noun_2" ng-model="word.noun_2">
+      <label for="noun_2">Enter another noun:</label>
+    </p>
+    <p>
+      <input type="text" name="verb_1" id="verb_1" ng-model="word.verb_1">
+      <label for="verb_1">Enter a verb:</label>
+    </p>
+    <p>
+      <input type="text" name="verb_2" id="verb_2" ng-model="word.verb_2">
+      <label for="verb_2">Enter another verb:</label>
+    </p>
+    <p>
+      <input type="text" name="adj_1" id="adj_1" ng-model="word.adj_1">
+      <label for="adj_1">Enter an adjective:</label>
+    </p>
+    <p>
+      <input type="text" name="adj_2" id="adj_2" ng-model="word.adj_2">
+      <label for="adj_2">Enter an adjective:</label>
+    </p>
+    <p>
+      <input type="text" name="adverb_1" id="adverb_1" ng-model="word.adv">
+      <label for="adverb_1">Enter an adverb:</label>
+    </p>
+    <p>
+      <button type="button" ng-click="inputWord(word)">Write your story
+      </button>
+  </fieldset>
+</form>
