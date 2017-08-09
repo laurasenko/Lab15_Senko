@@ -1,0 +1,91 @@
+body, input, label, button {
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+	
+body {
+margin: 0;
+background-color: rgb(62, 161, 93);
+}
+
+.container {
+background-color: lightgreen;
+margin: 5% auto;
+border: 3px solid darkgreen;
+max-width: 720px;
+}
+
+h1 { 
+text-align: center;
+text-transform: uppercase;
+text-shadow: 0px 0px 0px #338e33; 
+font-size: 200%;
+padding: 0; 
+margin: 0; 
+margin-top: 10%; 
+font-weight: bolder;
+color: white;
+}
+
+legend, h2 {
+text-align: center; 
+text-transform: uppercase;
+font-size: 150%;
+padding: 0; 
+margin: 0; 
+margin-top: 5%; 
+font-weight: bolder;
+color: #338e33;
+}
+
+form {
+	text-align: center;
+}
+
+form fieldset{
+text-align: center;
+display: inline-block;
+}
+
+nav {
+	border: 1px solid rgb(7, 150, 150);
+}
+
+nav a {
+	float: left;
+	text-transform: uppercase;
+	font-size: 120%;
+	font-weight: bold;
+	padding: 10px;
+	color: white;
+	background: #338e33;
+	letter-spacing: 2px;
+	padding: 10px;
+	border: 3px solid lightgreen;
+}
+
+nav a:active {
+	color: lightgreen;
+	font-size: 150%;
+}
+
+button {
+	background-color: #338e33;
+	color: lightgreen;
+	border: 2px solid darkgreen;
+	border-radius: 30px;
+	height: 40%;
+	width: 60%;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+button:active {
+	background-color: lightgreen;
+	color: #338e33;
+	border: 2px solid #338e33;
+	border-radius: 30px;
+	height: 30%;
+	width: 70%;
+	font-size: 150%;
+	font-weight: bold;
+}

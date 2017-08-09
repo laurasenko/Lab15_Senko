@@ -6,15 +6,24 @@ var app = angular.module("madLibsApp");
 //Define the service "madLibs Service" with 2 methods: getInput and setInput
 app.factory ("madLibsService", function () {
 
-	var word;
+	var words = [
+	/*{word: 'noun_1', placeholder: 'noun'},
+	{word: 'noun_2', placeholder: 'noun'},
+	{word: 'verb_1', placeholder: 'verb'},
+	{word: 'verb_2', placeholder: 'verb'},
+	{word: 'adj_1', placeholder: 'adjective'},
+	{word: 'adj_2', placeholder: 'adjective'},
+	{word: 'adv', placeholder: 'adverb'},*/
+	];
 
 	    return {
         setInput: function(value) {
-            word = value;
+            value= words;
+            console.log(value);
         },
         getInput: function() {
-            return word;
-            console.log(word);
+            return words;
+            console.log(words);
         }
     };
 });

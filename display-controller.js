@@ -5,7 +5,7 @@ var app = angular.module("madLibsApp");
 // Define a controller named 'displayController'
 app.controller("displayController", function($scope, madLibsService) {
     // Add a variable called "input" to the scope.
-   $scope.displayInput = function() {
+   $scope.getInput = function() {
     	madLibsService.getInput();
     };
 });

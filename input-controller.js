@@ -4,9 +4,11 @@ var app = angular.module("madLibsApp");
 
 // Define a controller named 'inputController' 
 app.controller("inputController", function($scope, madLibsService) {
-    // Add a variable called "input" to the scope.
-    $scope.inputWord = function(word) {
-    	madLibsService.setInput();
+	//initializes empty array
+	$scope.words = [];   
+    // Add a variable called "setInput" to the scope.
+    $scope.setInput = function() {
+    	madLibsService.setInput($scope.words);
     };
 });
 
