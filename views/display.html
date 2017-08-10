@@ -1,17 +1,40 @@
+<div ng-submit="getInput()">
+<h2>Your Terrible Poem</h2>
 
-<h2>Your Story</h2>
-<button type="button" ng-click="setInput()">Display your story
-      </button>
+<div id="vogon3Container">
+<img id="vogon3" src="images/vogons3.jpg" alt="vogon3";">
+</div>
 
-<p> 
-	This is a noun.<span class = "noun">{{words.noun_1}}</span>And then another noun.
-	<span class = "noun">{{words.noun_2}}</span>
-	<span class = "verb">{{words.verb_1}}</span>
-	<span class = "verb">{{words.verb_2}}</span>
-	<span class = "adj">{{words.adj_1}}</span>
-	<span class = "adj">{{words.adj_2}}</span>
-	<span class = "adv">{{words.adv}}</span>
-
-
-
+<p id="poemTitle"> 
+Ode to a 
+<span class = "noun">{{story.noun}}</span> 
+of 	<span class = "adj">{{story.adj}}</span> 
+<span class = "noun2">{{story.noun2}}</span> 
+I <span class = "verb">{{story.verb}}</span> 
 </p>
+
+<p>
+<span class = "month">{{story.month}}</span>
+<span class = "number">{{story.number}}</span> 
+
+is the new day. 
+</p>
+<p>
+It's in the season half way;
+</p>
+<p>
+<span class = "noun">{{story.noun}}</span> 
+<span class = "verb">{{story.verb}}</span>, 
+</p>
+<p>
+from my slumber I must arise.
+</p>
+<p>
+Must <span class = "adverb">{{story.adv}}</span>
+<span class = "verb">{{story.verb}}</span> 
+the
+<span class = "noun2">{{story.noun2}}</span> ,
+and put on my guise.
+</p>
+
+</div>

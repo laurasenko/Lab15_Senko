@@ -1,38 +1,40 @@
-<form>
+<form ng-submit="setInput()">
   <fieldset>
-    <legend>Mad Libs Input</legend>
+    <legend>Create a Vogon Poem</legend>
+
+    <img src="images/vogons2.jpg" alt="vogon2" style="width:40%;height:40%;">
+
     <p>
-      <label for="noun_1">Enter a noun:</label>
-      <input type="text" name="noun_1" id="noun_1" ng-model="words.noun_1" placeholder="noun" required="">
+      <label for="month">Enter month:</label>
+      <input type="text" name="month" class="month" ng-model="words.month" placeholder="month" required="">
       
     </p>
     <p>
-      <label for="noun_2">Enter another noun:</label>
-      <input type="text" name="noun_2" id="noun_2" ng-model="words.noun_2" placeholder="noun" required="">
-      
+      <label for="noun">Enter a noun:</label>
+      <input type="text" name="noun" class="noun" ng-model="words.noun" placeholder="noun" required=""> 
     </p>
     <p>
-      <label for="verb_1">Enter a verb:</label>
-      <input type="text" name="verb_1" id="verb_1" ng-model="words.verb_1" placeholder="verb" required=""> 
+      <label for="noun2">Enter another noun:</label>
+      <input type="text" name="noun2" class="noun2" ng-model="words.noun2" placeholder="noun2" required="">
     </p>
     <p>
-      <label for="verb_2">Enter another verb:</label>
-      <input type="text" name="verb_2" id="verb_2" ng-model="words.verb_2" placeholder="verb" required="">
+      <label for="verb">Enter a verb:</label>
+      <input type="text" name="verb" class="verb" ng-model="words.verb" placeholder="verb" required="">
     </p>
     <p>
-      <label for="adj_1">Enter an adjective:</label>
-      <input type="text" name="adj_1" id="adj_1" ng-model="words.adj_1" placeholder="adjective" required="">
+      <label for="adj">Enter an adjective:</label>
+      <input type="text" name="adj" class="adj" ng-model="words.adj" placeholder="adjective" required="">
     </p>
     <p>
-      <label for="adj_2">Enter an adjective:</label>
-      <input type="text" name="adj_2" id="adj_2" ng-model="words.adj_2" placeholder="adjective" required="">
+      <label for="number">Enter a number from 1-31:</label>
+      <input type="number" name="number" class="number" ng-model="words.number" placeholder="number" min=1, max=31>
     </p>
     <p>
-      <label for="adverb_1">Enter an adverb:</label>
-      <input type="text" name="adverb_1" id="adverb_1" ng-model="words.adv" placeholder="adverb" required="">
+      <label for="adverb">Enter an adverb:</label>
+      <input type="text" name="adverb" class="adverb" ng-model="words.adv" placeholder="adverb" required="">
     </p>
     <p>
-      <button type="button" ng-click="setInput()">Write your story
+      <button type="submit">Recite your poem
       </button>
   </fieldset>
 </form>

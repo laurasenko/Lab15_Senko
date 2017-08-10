@@ -5,13 +5,35 @@ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", He
 body {
 margin: 0;
 background-color: rgb(62, 161, 93);
+color: darkgreen;
+}
+
+#vogon1 {
+	width: 33%;
+	height: 33%;
+}
+
+#vogon1Container {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#vogon3 {
+	width: 33%;
+	height: 33%;
+}
+
+#vogon3Container {
+	text-align: center;
+	margin: 0 auto;
 }
 
 .container {
 background-color: lightgreen;
-margin: 5% auto;
+margin: 0 auto;
 border: 3px solid darkgreen;
 max-width: 720px;
+padding: 5%;
 }
 
 h1 { 
@@ -21,7 +43,7 @@ text-shadow: 0px 0px 0px #338e33;
 font-size: 200%;
 padding: 0; 
 margin: 0; 
-margin-top: 10%; 
+margin-top: 8%; 
 font-weight: bolder;
 color: white;
 }
@@ -29,7 +51,7 @@ color: white;
 legend, h2 {
 text-align: center; 
 text-transform: uppercase;
-font-size: 150%;
+font-size: 200%;
 padding: 0; 
 margin: 0; 
 margin-top: 5%; 
@@ -41,9 +63,14 @@ form {
 	text-align: center;
 }
 
-form fieldset{
+form fieldset {
 text-align: center;
 display: inline-block;
+}
+
+span {
+	color: darkblue;
+	font-weight: bolder;
 }
 
 nav {
@@ -88,4 +115,16 @@ button:active {
 	width: 70%;
 	font-size: 150%;
 	font-weight: bold;
+}
+
+img {
+	margin: 0 auto;
+	border: 5px solid #338e33;
+	border-radius: 13%;
+}
+
+#poemTitle {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 120%;
 }

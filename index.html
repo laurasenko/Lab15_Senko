@@ -1,19 +1,24 @@
 <!doctype html>
-<html  ng-app="madLibsApp">
+<html>
 <head>
     <title>Lab 15</title>
     <link rel="stylesheet" type="text/css" href="styles.css"> 
 </head>
-<body>
+<body ng-app="madLibsApp">
     <nav>
         <a href="#!/input">Enter Words Here</a>
-        <a href="#!/display">Read your Story</a>
+        <a href="#!/display">Recite your Terrible Poem</a>
     </nav>
 
     <main>
-        <h1>Mad Libs</h1>
+        <h1>Vogon Poetry Generator</h1>
+
+        <div id="vogon1Container">
+        <img id="vogon1" src="images/vogon1.jpg" alt="vogon1">
+        </div>
+
         <div class="container">
-            <div ng-view=""></div>
+            <ng-view></ng-view>
         </div>
     </main>
 
@@ -21,8 +26,8 @@
     <script src="lib/angular.min.js" charset="utf-8"></script>
     <script src="lib/angular-route.min.js" charset="utf-8"></script>
     <script src="app.js"></script>
-    <script src="input-controller.js"></script>
-    <script src="display-controller.js"></script>
+    <script src="inputController.js"></script>
+    <script src="displayController.js"></script>
     <script src="madLibsService.js" charset="utf-8"></script>
 </body>
 </html>

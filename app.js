@@ -1,4 +1,4 @@
-(function() {  //IIFE
+
 
 var madLibsApp = angular.module("madLibsApp", ["ngRoute"]);
 
@@ -15,8 +15,7 @@ madLibsApp.config(function($routeProvider) {
 	});
 
 	$routeProvider.otherwise ({
-		template: "Please select one of the links above to play Mad Libs."
+		template: "According to the Hitchhiker's Guide to the Galaxy, Vogons are a race from the planet Vogosphere that are responsible for the destruction of Earth. Vogon poetry is widely accepted as the third worst in the universe."
 	});
 });
 
-})();  //IIFE
